@@ -42,7 +42,7 @@ void mark_faces(float dt, cv::Mat src, cv::Mat &dst, bool detect) {
 int show_webcam(void (*process_frame)(float, cv::Mat, cv::Mat &, bool)) {
 	cv::Mat frame;
 	cv::VideoCapture cap(0);
-	cv::VideoWriter writer("out/demo.mov", cv::VideoWriter::fourcc('m','p','4','v'), 20.0, cv::Size(640, 360));
+	// cv::VideoWriter writer("out/demo.mov", cv::VideoWriter::fourcc('m','p','4','v'), 15.0, cv::Size(640, 360));
 
 	if(!cap.isOpened()) {
 		std::cerr << "ERROR! unable to open camera" << std::endl;
@@ -78,7 +78,7 @@ int show_webcam(void (*process_frame)(float, cv::Mat, cv::Mat &, bool)) {
 		detect = (detect + 1) % 2;
 
 		cv::imshow("Face Detection Breakout", frame);
-		writer.write(frame);
+		// writer.write(frame);
 
 		char c = (char) cv::waitKey(1);
 		if(c == 'q' || c == 'Q' || c == 27) {
@@ -88,7 +88,7 @@ int show_webcam(void (*process_frame)(float, cv::Mat, cv::Mat &, bool)) {
 			state = new PlayGameState(state);
 		}
 	}
-	writer.release();
+	// writer.release();
 	cap.release();
 	return 0;
 }
