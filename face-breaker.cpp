@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
 
 
 	state = new StartGameState();
-	classifier.load("../data/lbpcascade_frontalface_improved.xml");
+	classifier.load("lbpcascade_frontalface_improved.xml");
 	return show_webcam(mark_faces);
 }
 

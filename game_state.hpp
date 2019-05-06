@@ -70,7 +70,6 @@ public:
 	Ball(float r, cv::Scalar c = cv::Scalar(0, 0, 255)):radius(r),color(c){}
 
 	void draw(cv::Mat &frame) {
-		// cv::rectangle(frame, getRect(), cv::Scalar(0, 0, 255), cv::FILLED);
 		cv::circle(frame, vec2Point(pos), radius, color, cv::FILLED);
 	}
 
@@ -100,7 +99,6 @@ public:
 
 	void setBricks(const cv::Mat &frame) {
 		int num_bricks_per_row = 10;
-		std::cout << frame.cols << std::endl;
 		int width = frame.cols / num_bricks_per_row;
 		int height= 20;
 		for(int y = 0;y < 5;y++) {
