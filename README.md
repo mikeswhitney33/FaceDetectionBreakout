@@ -7,10 +7,12 @@ An implementation of breakout using face detection
 * numpy
 * pygame
 * opencv-python
+
 The dependencies can be installed using
 ```
 pip install -r requirements.txt
 ```
+
 The program can be run with:
 ```
 python breakout.py
