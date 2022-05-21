@@ -1,20 +1,19 @@
 # FaceDetectionBreakout
 An implementation of breakout using face detection
 
-### Requirements:
-* [OpenCV](https://opencv.org)
-* A webcam attached to the computer
-
-### Building:
-This project uses CMake.  To build issue the following command:
+### Dependencies:
+* A webcam
+* face-recognition
+* numpy
+* pygame
+* opencv-python
+The dependencies can be installed using
 ```
-cmake .
-make
+pip install -r requirements.txt
 ```
-
-once build, you can run the program by running:
+The program can be run with:
 ```
-./bin/face-breaker
+python breakout.py
 ```
 
 ### Controls
