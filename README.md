@@ -19,4 +19,4 @@ once build, you can run the program by running:
 ```
 
 ### Controls
-Press `p` to start the game.  Use your face to control where the paddle goes. Press `q` to quit.
+Press `space` to start the game.  Use your face to control where the paddle goes. Press `q` to quit.
