@@ -3,7 +3,6 @@ An implementation of breakout using face detection
 
 ### Requirements:
 * [OpenCV](https://opencv.org)
-* [CMake](https://cmake.org)
 * A webcam attached to the computer
 
 ### Building:
